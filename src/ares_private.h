@@ -91,6 +91,7 @@
 #  define strdup(ptr) ares_strdup(ptr)
 #endif
 
+#if 0
 #ifndef HAVE_STRCASECMP
 #  include "ares_strcasecmp.h"
 #  define strcasecmp(p1,p2) ares_strcasecmp(p1,p2)
@@ -99,6 +100,7 @@
 #ifndef HAVE_STRNCASECMP
 #  include "ares_strcasecmp.h"
 #  define strncasecmp(p1,p2,n) ares_strncasecmp(p1,p2,n)
+#endif
 #endif
 
 #ifndef HAVE_WRITEV
